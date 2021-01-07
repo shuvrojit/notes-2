@@ -1,0 +1,26 @@
+#+title: Getting Things Done
+
+
+* GTD
+
+GTD is a personal productivity method that redefines how you approach your work and life.
+
+** Capture - Collect what has your attention.
+
+Write, Record or gather any and everything that has your attention into a collection tool.
+
+** Clarify - Process what it means.
+
+Is it actionable? If so decide the next action and plan your project (if more than one action is required) if not decided if it is trash, reference or something to put on hold.
+
+** Organize - Put where it belongs.
+
+Park reminders of your categorized content in appropriate places.
+
+** Reflect - Review frequently.
+
+Update and review all pertinent system contents to gain control and focus.
+
+** Engage - Simply do.
+
+Use your trusted system to make action decisions with confidence and clarity.

@@ -1,0 +1,36 @@
+#+title: My Activity in Data
+#+author: Shuvrojit Biswas
+
+** Legends
+
+    * sleeping
+    * focused work
+      + uni
+      + self-improvement
+      + admin
+      + organizing
+      + german
+    * low focused work
+    * socializing
+    * culture
+      + books
+      + flims
+      + entertainment
+      + documentaries
+      + TV shows
+    * human function
+      + showering
+      + making food
+    * other quality time
+    * traveling
+    * excercising
+    * excercising(lower intensity)
+    * procrastination
+    * idle
+
+
+
+** Data
+
+| 00.15 | 00.30 | 00.45 | 01.00 | 01.15 |
+|       |       |       |       |       |

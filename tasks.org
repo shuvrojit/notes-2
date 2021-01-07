@@ -1,0 +1,14 @@
+#+TITLE: Tasks
+#+AUTHOR: Shuvrojit Biswas
+
+* Daily Tasks
+** Learn Lisp
+** Learn Org-mode
+** Learn Org-roam
+
+
+* Future Tasks
+** Make an AI simulating the world (World AI)
+
+
+* Archived Tasks

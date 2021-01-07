@@ -1,0 +1,29 @@
+
+* Sit down and think.
+
+ All of humanity's problem stem from man's inability to sit quietly in a room alone.
+ Modern humans virtually spend no time on "inward-directed thought"
+ We mistake ourselves for individual, isolated beings, trapped within our heads.
+ People detest being made to spend 10 to 15 minutes in a room alone to do nothing but thinking. even to the extent of being willing to give themsleves a mild electric shock.
+
+
+* how to think like a programmer - talk
+
+** new var
+    * Name : what to call this thing?
+    * Type : what type of data will this variable hold?
+    * InitVal : what is the starting value of this variable?
+
+      type name = InitVal
+
+** while algo
+    * sentry : var that will control loop
+    * Initilization Vaue : code that initializes sentry
+    * condition : loop repeats if condition is true
+    * change code : code to change sentry so condition can be triggered.
+** Reversed built-in function in python
+    reverses the built-in function in python. returns an iterative object that can be used by the loop to use this.
+
+** <2021-01-05 Tue>
+
+** What is madlibs? - It's a wordplay game.

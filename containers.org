@@ -1,0 +1,17 @@
+#+TITLE: Containers
+
+* Containers and Kubernates:
+
+** Containers:
+
++ executale unit of software
++ got everything that needs to run like packages/libaries
++ can run anywhere
++ os-level virtualization (behave and feel like native OS)
++ isolate processes
++ control resource allocated to these processes
++ small, fast and portable.
+
+** Docker:
+
+Docker is built in golang. Only linux os can run linux dockers because of the karnel is same everywhere in linux. Only windows os can run windows docker because of the windows karnel.

@@ -1,0 +1,98 @@
+#+TITLE: Python
+
+
+** Data Types
+*** String concatenation
+
+Three ways to define string concatenation in python.
+
+#+BEGIN_SRC python :results output
+variable = "Nomad"
+print("Who are you?" + variable)
+print("Who are you? {}".format(variable))
+print(f"Who are you? {variable}")
+print(f"Who are you? \
+I am nobody.")
+#+END_SRC
+
+#+RESULTS:
+: Who are you?Nomad
+: Who are you? Nomad
+: Who are you? Nomad
+: Who are you? I am nobody.
+
+** Projects:
+
+*** Guess the number:
+
+It's a game where people guess a secret number that the computer has been hiding. Randoms should not be used for cryptography or secrets. [[secrets]] module should be used for that.
+
+#+begin_src python :results output
+from random import randint
+
+secretNumber =  randint(1, 10)
+
+
+userInput = int(input("Guess the number >>"))
+
+while (userInput != secretNumber):
+    if (userInput > secretNumber):
+        print("Not correct. Guess a little less.")
+
+    elif (userInput < secretNumber):
+        print("Not correct. Guess a little more.")
+
+print("You guessed corrected.")
+#+end_src
+
+#+RESULTS:
+
+*** is vs ==
+
+The difference between is and == . is checks to see if two variable refers to the same object.
+But == checks if the pointed objects has the same value.
+
+s
+
+** OOP
+
+A object can be a function, a variable, a property, a class... everything in python is an object. Think of an object as a generic container
+
+classes allow you to define the data and behaviors of similiar objects. The behaviors are described by Methods.
+
+Data within classes are stored in the attributes(variables) and there are two kinds of them : classs attributes and instance attributes.
+
+class is defined by class keyword and the name of the class:
+
+#+begin_src python :results output
+# class syntax
+class MyClass:
+    var = ...   # some variable
+
+    def do_this():
+        pass
+        # some method
+#+end_src
+
+#+RESULTS:
+
+Class words starts with a keyword.
+
+***** class attributes:
+
+A class attribute is an attribute shared by all instances of the class.
+
+#+begin_src python :results output
+class Book:
+    material = "paper"
+    label = "none"
+    all_books = []
+
+my_book = Book()
+print(my_book.material)
+#+end_src
+
+#+RESULTS:
+: paper
+
+All those variables are class attributes and they can be accessed by using dot notation with the name of the class.

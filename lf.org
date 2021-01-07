@@ -1,0 +1,6 @@
+#+TITLE: Lf
+#+AUTHOR: Shuvrojit Biswas
+
+* LF file manager tutorial
+
+Lf file manager is self-documented. The man page has all the customization facilities written in there. It's pretty straightforward. No need to worry. Lf is written in golang. So it's pretty fast. Once you cutomize it, it will run very smoothly.

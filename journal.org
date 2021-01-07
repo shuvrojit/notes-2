@@ -1,0 +1,8 @@
+
+* 2020
+** 2020-09 September
+*** 2020-09-13 Sunday
+
+- Today was all about linux and linux tools. I learned about dwm, suckless utilities and how to use emacs too. I will writting about this all in my zettelkasten or say blog.
+** 2020-10 October
+*** 2020-10-15 Thursday

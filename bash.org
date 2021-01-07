@@ -1,0 +1,88 @@
+#+TITLE: Bash
+
+* Learn Bash
+** Shell Execution
+
+Shell internal command will be executed first and then external command with the same name.
+
+**** How bash works when a command is entered:
+
++ Bash parses the command name to see if there's a path prepended with this command name. If so skip to 3.
++ Bash checks to see if the command is internal. If it is bash returns the command immediately.
++ If a path is used as part of the command bash forks a new subprocess in which to execute the command and then runs the command. This function takes time as well as resources such as CPU, I/O and RAM.
++ If no path to the command is specified and this not an internal command, bash searches the list of aliases and shell functions that system and user created procedures. If one is found, it forks a new shell subprocess and executes the function ro alias. It takes a small time.
++ If no alias or function is located, bash then searches the list of directories specified in the $PATH
+
+** Scripting
+
+Scripts run each command waiting for it to finish before moving on to run the next command. That behaviour can be modified by appending an ampersand (&) to the end of a command.
+
+*** Data Streaming & Pipes
+
+Everything in linux revolves around streams of data, text streams mostly. A stream is a flow text data that originates at some source. STDIO is a buffered data stream and it's primary function is to stream data from the output of one program, file or device to the input of another program, file or device. Data streams are raw materials upon which core utilities and many other CLI tools perform their work.
+
+We are going to use pipes to connect streams of data from one utility program to another utility program by using STDIO. There are three STDIO data stream each of which is automatically opened as a file at the startup of a program. Each STDIO data streams is associated with a file handle which is just a set of metadata that describes the attributes of the file. File handles 0, 1 adn 2 are explicitly defined by convention and long practices as STDIN, STDOUT and STDERR respectively. STDIN is not common to need to redirect but it can be done. The data streams for STDERR is also usually sent to the display. STDIO is implemented in a standard C library header file, stdio.h .
+
+A data stream taken from special device files random, urandom and zero for example can continue forever without some form of external termination. Prevent this with C-c, a limiting argument to the command or system failure.
+** Tools
+
+*** ls - list file names, user, size, group etc.
+
+ls means list in linux CLI. It is command for displaying file names, user, group, size.
+
+*** awk
+
+Awk is text filtering tool.
+
+*** sed
+*** cat - concatanate two or more files.
+
+Cat is a concatanating tool. It concatanates two files
+
+*** less
+
+less is for reading text files
+
+*** more
+***
+
+*** reset - resets the terminal.
+
+reset command will reset the terminal.
+
+*** clear - clear the terminal previous outputs.
+
+clear will clear the terminal.
+
+*** screen
+
+screen is a tool for managing sessions.
+
+*** w
+
+w command lists currently logged in users and uptime.
+
+*** who
+
+same as [[w]] but provides more details for ssh. Like ip address and which tty is running gui etc.
+
+*** whoami
+
+Your current login name.
+
+*** id - shows user id (uid), group id etc.
+
+Shows user id (uid) group id and on which group.
+
+*** pwd - print current directory path from root.
+
+print working directory
+
+*** cd - change directory. ~ for home, - for previous.
+
+change directory
+
+***
+*** nice
+
+Nice is a cli core utils program to run with kernel scheduler.

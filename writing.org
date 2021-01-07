@@ -1,0 +1,4 @@
+#+TITLE: Writing Tips
+#+AUTHOR: Shuvrojit Biswas
+
+You have one character that wants something badly.

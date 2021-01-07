@@ -1,0 +1,9 @@
+#+TITLE: Blog Planning
+#+AUTHOR: Shuvrojit Biswas
+
+
+* Planning
+
+*** DONE Buy a domain.
+*** DONE set up github pages hosting
+*** TODO write content.

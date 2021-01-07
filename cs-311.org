@@ -1,0 +1,18 @@
+#+TITLE: CSE-311 AI
+
+
+* Lectures: 
+
+** Uniform Cost Search
+** Naive Bayes Classifier Algorithm
+** BFS and DFS on graph
+** KNN algorithm for machine learning
+
+
+* Questions:
+
+** How can machines Learn?
+** Why do we need KNN algorithm?
+** Write down the concepts of Naive Bayes Theorm.
+** Applications of Naive Bayes.
+** 

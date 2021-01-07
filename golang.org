@@ -1,0 +1,17 @@
+#+TITLE: Golang
+
+
+* Notes on Golang
+
+Golang is a programming language. It's a system programming language. It has built-in concurrency. Go has a rich feature set and a good choice for backend development.
+
+** Object Oreinted Programming:
+
+*** Organize code through encapsulation
+*** Groups together data and function which are related
+*** User defined type which is specific to an application.
+
+** Concurrency:
+
+*** According to moore's law the number of transistor double's every 18 months.
+*** Clock speed at it's limit, because the cooling hasn't catch up to speed yet.
