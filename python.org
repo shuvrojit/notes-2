@@ -21,32 +21,7 @@ I am nobody.")
 : Who are you? Nomad
 : Who are you? I am nobody.
 
-** Projects:
-
-*** Guess the number:
-
-It's a game where people guess a secret number that the computer has been hiding. Randoms should not be used for cryptography or secrets. [[secrets]] module should be used for that.
-
-#+begin_src python :results output
-from random import randint
-
-secretNumber =  randint(1, 10)
-
-
-userInput = int(input("Guess the number >>"))
-
-while (userInput != secretNumber):
-    if (userInput > secretNumber):
-        print("Not correct. Guess a little less.")
-
-    elif (userInput < secretNumber):
-        print("Not correct. Guess a little more.")
-
-print("You guessed corrected.")
-#+end_src
-
-#+RESULTS:
-
+** Comparison
 *** is vs ==
 
 The difference between is and == . is checks to see if two variable refers to the same object.
@@ -96,3 +71,32 @@ print(my_book.material)
 : paper
 
 All those variables are class attributes and they can be accessed by using dot notation with the name of the class.
+** Projects:
+
+*** Guess the number:
+
+It's a game where people guess a secret number that the computer has been hiding. Randoms should not be used for cryptography or secrets. [[secrets]] module should be used for that.
+
+#+begin_src python :results output
+from random import randint
+
+secretNumber =  randint(1, 10)
+
+while (True):
+    userInput = int(input("Guess the number >>"))
+
+    if (userInput > secretNumber):
+        print("Not correct. Guess a little less.")
+
+    elif (userInput < secretNumber):
+        print("Not correct. Guess a little more.")
+
+    else:
+        print("You guessed corrrected")
+        break
+#+end_src
+
+
+*** Madlibs: Just a wordplay game.
+
+***

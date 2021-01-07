@@ -7,6 +7,31 @@ Org mode is emacs mode based on outline mode. has some unique feature sets that 
 
 Shortcut for source code blocks: <sTAB
 
+** Interactive Font Sizes
+
+command ~text-scale-adjust~ has three keybindings:
+=text-scale-increate=
+=text-scale-decrease=
+
+    * =C-x C-+= (increase font size)
+    * =C-x C--= (decrease font size)
+    * =C-x C-0= (reset to default font size)
+
+Bind these functions with =C-+= =C--=.
+
+#+begin_src emacs-lisp
+(global-set-key (kbd "C-+") 'text-scale-increase)
+(global-set-key (kbd "C--") 'text-scale-decrease)
+#+end_src
+
+** Highlight current line
+
+uilt in global minor mode ~global-hl-line-mode~. You can change the highlighted color by adjusting the value of ~hl-line-face~ face.
+
+#+begin_src emacs-lisp
+(global-hl-line-mode +1)
+(hl-line-face <value>)
+#+end_src
 
 ** Moving Lines
 
@@ -79,3 +104,9 @@ so to
 
 ** Quitting
 src_<elisp>{<(setq confirm-kill-emacs nill)>}
+
+*** Automatic kill process on quit
+
+#+begin_src emacs-lisp
+(setq confirm-kill-processes nil)
+#+end_src

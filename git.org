@@ -1,0 +1,13 @@
+#+title: Git Doc
+#+author: Shuvrojit Biswas
+
+
+** Git repository upload
+
+Create a repository in github and then do this. If you have ssh setup in your system with github authentication then use ssh version of the url.
+
+#+begin_src sh
+git remote set-url <https url from github>
+git push origin master
+# will ask for username and password
+#+end_src
