@@ -1,0 +1,33 @@
+#+title: Emacs Tutorial
+#+author: Shuvrojit Biswas
+
+
+
+*** Define packages
+
+Define packages in doom:
+
+#+begin_src emacs-lisp
+(package! packagename)
+#+end_src
+
+*** Key Bindings in emacs:
+
+In DOOM:
+#+begin_src emacs-lisp
+;; ~/.doom.d/config.el
+(map! :leader (:prefix ("r" . "eradio") :desc "Play a radio channel" "p" 'eradio-play))
+(map! :leader (:prefix ("r" . "eradio") :desc "Stop the radio player" "s" 'eradio-stop))
+(map! :leader (:prefix ("r" . "eradio") :desc "Toggle the radio player" "t" 'eradio-toggle))
+#+end_src
+
+#+RESULTS:
+: eradio-toggle
+
+In Vanilla:
+#+begin_src emacs-lisp
+;; ~/.emacs.d/init.el
+(global-set-key (kbd "C-c r p") 'eradio-play)
+(global-set-key (kbd "C-c r s") 'eradio-stop)
+(global-set-key (kbd "C-c r t") 'eradio-toggle)
+#+end_src
