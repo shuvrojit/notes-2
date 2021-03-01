@@ -1,0 +1,6 @@
+#+title: Regression
+#+author: Shuvrojit Biswas
+
+** Foundation
+
+Sir Frances Galton in 1886 discovered the technique known as regression models. Regression models are being used to discover effective medicines, improve the method of operations and optimize resources for small and large hospitals. In the business world, regression models are at the forefront of analyzing customer behavior, firm productivity and competitiveness of public and private sector entities.

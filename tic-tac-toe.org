@@ -1,0 +1,8 @@
+#+title: Tic tac toe
+
+
+** Intro
+
+Tic-tac-toe is a game played by two players in a 3x3 grid. One of the players is 'X' and the other player is 'O'. X plays first then O takes turn and so on.
+
+The player write X and O on a 3x3 field. The first player that puts 3X's or 3O's in a straight line or a diagonal line wins the game.

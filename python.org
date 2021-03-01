@@ -1,7 +1,26 @@
 #+TITLE: Python
 
+** Python Virtual Environment
+
+Create a python virtual environment:
+#+begin_src sh
+python -m venv dirname
+#+end_src
+
+This will create the dirname directory if it doesn't exist already
+
+Python has a lot of virtual environment software. To name a few:
+    * Pyenv
+    * Poetry
+    * Conda
+    * virtualenv
+    *
 
 ** Data Types
+*** Global variable
+
+global variables are those which can be accessed from anywhere in the python. It just has global keyword infront of the variable name.
+
 *** String concatenation
 
 Three ways to define string concatenation in python.
@@ -20,14 +39,123 @@ I am nobody.")
 : Who are you? Nomad
 : Who are you? Nomad
 : Who are you? I am nobody.
+** Importing libary and functions
 
-** Comparison
-*** is vs ==
+Libaries and modules and functions can be imported this way:
 
-The difference between is and == . is checks to see if two variable refers to the same object.
-But == checks if the pointed objects has the same value.
+#+begin_src python
+import math # imports all the functions of math.
+from math import pi # imports just one function from math libary.
+from math import radians as r # imports one function with a different name
+#+end_src
 
-s
+#+RESULTS:
+: None
+
+*** Lambda functions
+
+lambda functions are also annonymous functions. They are most throw away functions.
+Syntax *lambda arguments:expression*
+
+#+begin_src python :results output
+sumof2 = lambda x,y : x+y
+print(sumof2(3,4))
+sumof1 = lambda x : x+1
+print(sumof1(3))
+#+end_src
+
+#+RESULTS:
+: 7
+: 4
+
+*** map function
+
+map function applies a given function to all items of a iterable (list, tuples, etc).
+map(function, iterable)
+map does some operation based on the function definition and operates on every single item of a list or some other iterable item.
+map doesn't return a value or list. map returns an generator object.
+
+#+begin_src python :results output
+lis = ["hob", "shwa", "barley"]
+ls = map(len, lis)
+print(list(ls))
+#+end_src
+
+#+RESULTS:
+: [3, 4, 6]
+
+*using map with lambda function*
+
+#+begin_src python :results output
+ls = [1, 2, 4]
+lam = lambda x : x+3
+lsd = map(lam, ls)
+print(list(lsd))
+#+end_src
+
+#+RESULTS:
+: [4, 5, 7]
+
+*using map with lambda in logistic function*
+logistic function is often used in predictive modeling in machine learning when dealing with binary response variables.
+
+        f(x) = 1/(1+e**-x)
+
+#+begin_src python :results output
+import math
+nums = [-3, -5, 1, 4]
+x = map(lambda x : 1/(1+math.exp(-x)), nums)
+print(list(x))
+#+end_src
+
+#+RESULTS:
+: [0.04742587317756678, 0.0066928509242848554, 0.7310585786300049, 0.9820137900379085]
+
+*** filter function
+
+filter takes a function and iterables as inputs. It returns the elements of the list as a new list if the function returns true for those elements.
+
+filter(function, iterable)
+a program that calculates all the multiplies of 3 and 7 below 1000 and sums them up.
+
+
+#+begin_src python :results output
+ls = filter(lambda x : x % 3 == 0 or x % 7 == 0, range(1000))
+print(sum(ls))
+#+end_src
+
+#+RESULTS:
+: 214216
+
+*** sorted function
+
+sorted takes a iterable and sorts the list according to a function
+function must be assigned to key. returns a list.
+
+sorted(list, key=function)
+
+#+begin_src python :results output
+names = ['kabir', 'Akhi', 'Bolo', 'Desai']
+sort = sorted(names, key = lambda x : len(x))
+print(sort)
+
+#+end_src
+
+#+RESULTS:
+: ['Akhi', 'Bolo', 'kabir', 'Desai']
+
+** Working with files
+
+*** reading files
+
+first you have to open a file then read the content to a variable. Then print the variable to view the book. if you don't print then you have raw data. print command renders the control characters. like \n newline or something like that.
+
+#+begin_src python :results output
+f = open('pg37431.txt')
+tx = f.read()
+print(tx)
+
+#+end_src
 
 ** OOP
 
@@ -70,7 +198,39 @@ print(my_book.material)
 #+RESULTS:
 : paper
 
+
 All those variables are class attributes and they can be accessed by using dot notation with the name of the class.
+** Data Science
+*** Numpy
+
+**** Why use Numpy
+    * Alternative to python lists -> Numpy array
+    * Numeric Python
+    * Calculations over entire arrays
+    * Numpy arrays cna contain only one type
+    * Different types: different behavior
+
+
+Numpy is Numeric python for data science
+
+#+begin_src python
+import numpy as np
+numpya = np.array([1,2,3])
+print(numpya)
+#+end_src
+
+**** Matplotlib for visualization
+**** pandas for working with tabular data
+
+** Clustering Algorithm
+** Comparison
+*** is vs ==
+
+The difference between is and == . is checks to see if two variable refers to the same object.
+But == checks if the pointed objects has the same value.
+
+s
+
 ** Projects:
 
 *** Guess the number:
@@ -83,7 +243,7 @@ from random import randint
 secretNumber =  randint(1, 10)
 
 while (True):
-    userInput = int(input("Guess the number >>"))
+    userInput = int(input("Guess the numb   er >>"))
 
     if (userInput > secretNumber):
         print("Not correct. Guess a little less.")

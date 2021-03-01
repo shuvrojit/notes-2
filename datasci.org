@@ -1,0 +1,31 @@
+#+title: Data Science
+#+author: Shuvrojit Biswas
+
+
+* Intro to Data Science
+* Big Data
+
+*** V's of Big Data
+
+    * Velocity
+    * Volume
+    * Variety
+    * veracity
+    * value
+
+*** Drivers
+
+    * Mobile technologies
+    * Social media
+    * Wearable tech
+    * Geo tech
+
+
+** Hadoop
+
+** Neural networks are based on linear algebra and matrix
+
+
+* Q&A
+
+*** Q1:

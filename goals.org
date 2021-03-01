@@ -1,21 +1,39 @@
 #+TITLE: Goals of My Life
 #+AUTHOR: Shuvrojit Biswas
 
+* Skills which will be with me to the end of my days.
+** Bash Scripting
+Have I learned it fully? No.
+** Emacs
+Have I learned it fully? No. Just some workarounds.
+** Algorithm.
 * Goals of My Life
 
-** Write a Application
-** Write a Book
-** Write a Poem
-** Write a Story
-** Build a Computer
-** Design a Building
-** Paint a Picture
-** Play an Instrument
-** Write a Song
-** Write a Musical Note
-** Make a Blog
-** 6 pcak abs
-** Learn Psychology
-** Learn Piano
+
+** TODO Write a Application
+** TODO Write a Book
+** TODO Write a Poem
+** TODO Write a Story
+** TODO Build a Computer
+** TODO Design a Building
+** TODO Paint a Picture
+** TODO Play an Instrument
+** TODO Write a Song
+** TODO Write a Musical Note
+** TODO Make a Blog
+** TODO 6 pcak abs
+** TODO Learn Psychology
+** TODO Learn Piano
 ** TODO Learn Violin
-** Learn Guiter
+** TODO Learn Guiter
+
+haruki murakami
+
+
+* The things I have done
+
+** DONE Smoke weed like a pyschopath
+** DONE Donot sleep for 4 days and night
+** DONE Break my sleep cycle
+** Drink premium alchohol
+**
